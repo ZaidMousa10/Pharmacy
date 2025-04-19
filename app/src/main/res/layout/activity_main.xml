@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#894A494B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="42dp"
+            android:layout_height="46dp"
+            android:src="@drawable/pharmacyapp" />
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search" />
+
+        <EditText
+            android:id="@+id/editText_search"
+            android:layout_width="255dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Search product"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button_cart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shoppingcart" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/productListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:nestedScrollingEnabled="true"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
